@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="StorefrontAPISample_Xamarin.ApplicationsListPage"
+		xmlns:local="clr-namespace:StorefrontAPISample_Xamarin;assembly=StorefrontAPISample_Xamarin"
+		Title="Application List">
+	<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="10, 20, 10, 0" Android="10, 20, 10, 0" />
+	</ContentPage.Padding>
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<local:UrlToImage x:Name="urltoimage" x:Key="urltoimage"></local:UrlToImage>
+			<local:ShowICACommand x:Key="showicacmd"></local:ShowICACommand>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+	<ContentPage.Content>
+		<ListView x:Name="lstApplications">
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<StackLayout Orientation="Horizontal" Margin="10,0,10,0">
+							<Image Source="{Binding AppIcon, Converter={StaticResource urltoimage}}}" WidthRequest="48" HeightRequest="48" />
+							<Label Text="{Binding AppName}" HorizontalOptions="CenterAndExpand" HorizontalTextAlignment="Start" />
+							<StackLayout Orientation="Horizontal" HorizontalOptions="End">
+								<Button Text="Show ICA" Command="{StaticResource showicacmd}" CommandParameter="{Binding}" />
+								<Button Text="Launch" Clicked="launchAppClicked" />
+							</StackLayout>
+						</StackLayout>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+		</ListView>
+	</ContentPage.Content>
+</ContentPage>

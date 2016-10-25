@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+		xmlns="http://xamarin.com/schemas/2014/forms" 
+		xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+		x:Class="StorefrontAPISample_Xamarin.LoginPage"
+		Title="Storefront Login">
+	<ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness" iOS="10, 20, 10, 0" Android="10, 20, 10, 0"/>
+	</ContentPage.Padding>
+	<ContentPage.Content>
+		<StackLayout Orientation="Vertical">
+			<Label Text="Username"></Label>
+			<Entry Text="" Placeholder="Storefront Username" x:Name="txtUsername"></Entry>
+			<Label Text="Password"></Label>
+			<Entry Text="" x:Name="txtPassword" IsPassword="true" Placeholder="Enter Password"></Entry>
+			<Label Text="Domain"></Label>
+			<Entry Text="" x:Name="txtDomain" Placeholder="Enter Domain"></Entry>
+			<Label Text="Storefront URL"></Label>
+			<Entry Text="" x:Name="txtSFUrl" Placeholder="Enter Storefront URL"></Entry>
+			<Button Text="Login" VerticalOptions="End" Clicked="Login_Clicked"></Button>
+		</StackLayout>
+
+	</ContentPage.Content>
+</ContentPage>
