@@ -21,12 +21,12 @@ Here are some images that display the application. In the sample we have the fol
 3. ICA Viewer screen
 
 ### iOS
-<img src="./Images/iosSFLogin.png" height="500" /> 
-<img src="./Images/iosSFApps.png" height="500" />
-<img src="./Images/iosSFICA.png" height="500" />
+<img src="./Images/iosSFLogin.png" height="420" /> 
+<img src="./Images/iosSFApps.png" height="420" />
+<img src="./Images/iosSFICA.png" height="420" />
 
 ### Android
-<img src="./Images/androidSFLogin.png" height="500" /> 
-<img src="./Images/androidSFApps.png" height="500" />
-<img src="./Images/androidSFICA.png" height="500" />
+<img src="./Images/androidSFLogin.png" height="390" /> 
+<img src="./Images/androidSFApps.png" height="390" />
+<img src="./Images/androidSFICA.png" height="390" />
 
