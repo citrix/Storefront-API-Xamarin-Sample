@@ -5,7 +5,7 @@ Citrix Storefront API to authenticate, List your available
 resources, and generate an ICA file that you can then pass
 on to something like receiver to handle the connection. 
 
-This is a base sample that shows how to use the Storefront AIP and will allow
+This is a base sample that shows how to use the Storefront API and will allow
 you to build upon it to create your own solutions.
 
 This sample is built using Xamarin.Forms to allows it to
@@ -16,9 +16,9 @@ type of sample. Check out the [following link](https://www.nuget.org/packages?q=
 
 
 Here are some images that display the application. In the sample we have the following
-1. Login screen
-2. Application list screen
-3. ICA Viewer screen
+  1. Login screen
+  2. Application list screen
+  3. ICA Viewer screen
 
 ### iOS
 <img src="./Images/iosSFLogin.png" height="420" /> 
